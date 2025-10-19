@@ -22,7 +22,7 @@ while True:
 
     # 显示结果
     cv2.imshow("YOLOv8 Real-Time", annotated)
-    boxes = results[0].boxes
+    boxes = results[0].boxes # results 是 detector.detect 返回的结果，是一个列表
     # boxes 是 results.boxes
     # results 是 detector.detect 返回的结果
     for box in boxes:
@@ -36,7 +36,7 @@ while True:
         print(f"目标 {cls_name} 坐标中心: ({cx},{cy}), 置信度: {score}")
 
         # 如果要自动点击
-        if cls_name == "Sun":
+        if cls_name == "Sun":q
             click_window("Plants vs. Zombies", cx, cy)
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
