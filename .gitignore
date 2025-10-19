@@ -1,0 +1,4 @@
+*.log
+runs
+valid
+__pycache__
