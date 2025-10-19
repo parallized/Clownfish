@@ -10,9 +10,8 @@ def capture_window_bottom_80(hwnd):
     x1, y1, x2, y2 = rect
     width, height = x2 - x1, y2 - y1
     
-    # 截取底部 80%
-    top = y1 + int(height * 0.2)
-    mon = {"top": top, "left": x1, "width": width, "height": int(height * 0.8)}
+    top = y1
+    mon = {"top": top, "left": x1, "width": width, "height": height}
     
     with mss.mss() as sct:
         img = sct.grab(mon)
