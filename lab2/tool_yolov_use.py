@@ -22,7 +22,7 @@ def getAllSunPosition(results):
 
 # 初始化
 window_title = "Plants vs. Zombies"
-hwnd = win32gui.FindWindow(None, window_title)
+hwnd = win32gui.FindWindow(None, window_title) # 返回 hwnd 句柄
 detector = YOLOv8Detector("best.pt", conf=0.1) # 模型（yolov8 自带的测试用模型，可以识别常见物体）
 
 start_time = time.time()
