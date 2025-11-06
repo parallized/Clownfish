@@ -1,0 +1,23 @@
+他的类型 是 ultralytics.engine.results.Results
+
+ultralytics 是他的公司
+ultralytics.engine 这个公司的引擎
+ultralytics.engine.results 这个公司的引擎 的 图形结果类
+ultralytics.engine.results.Results 这个公司的引擎 的 图形结果类 的 结构体
+
+
+object
+
+这个类型有 这些 属性, 成员变量 attributes:
+
+1. 盒子 boxes:
+
+类型是 ultralytics.engine.results.Boxes
+
+2. 标签 名字 names: 
+
+yolov8 我的数据集里面有哪些识别标签
+
+{0: 'BTG Button', 1: 'Flag Zombie', 2: 'Garden', 3: 'House Name', 4: 'Main Menu Button', 5: 'Menu Button', 6: 'Mower', 7: 'Newspaper Zombie', 8: 'Next Level', 9: 'Pause Menu', 10: 'Peashooter Seed', 11: 'Peashooter', 12: 'Restart Level Button', 13: 'Resume Button', 14: 'Reward', 15: 'Seed Panel', 16: 'Stop Menu', 17: 'Sun', 18: 'Sunflower Seed', 19: 'Sunflower', 20: 'Zombie'}
+
+3. 速度 speed: {'预处理': 1.5ms, '推论': 6.5ms, '后处理': 0.5ms}

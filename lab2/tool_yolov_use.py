@@ -33,16 +33,19 @@ while True:
 
     # YOLO 检测
     annotated, results = detector.detect(pil_img) # 进行一次图形识别
+    result = results[0]
 
     # 显示结果
     cv2.imshow("YOLOv8 Real-Time", annotated)
 
     # 获取所有阳光位置
-    suns = getAllSunPosition(results)
+    # suns = getAllSunPosition(results)
+    speed = result.speed
+    print(speed)
 
     # 点击所有阳光位置
-    for sun in suns:
-        click_window("Plants vs. Zombies", sun[0], sun[1])
+    # for sun in suns:
+        # click_window("Plants vs. Zombies", sun[0], sun[1])
 
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
